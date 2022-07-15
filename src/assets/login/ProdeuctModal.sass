@@ -1,0 +1,188 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 992px)
+  .modal-body
+    .rowrow
+      margin-top: 0px
+      .col-4
+        padding: 0px
+        .img_box
+          img
+            +size(250px)
+      .col-8
+        padding: 0px
+        .box_tital_type
+          +flex_box
+          .input_box
+            margin-bottom: 20px
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              border-radius: 5px
+              text-align: center
+              +size(80%,40px)
+              &#checkbox
+                +size(20px)
+        .textarea_box
+          textarea
+            width: 100%
+            height: 100px
+  .modal-footer
+    button
+      border: none
+      border-radius: 5px
+      padding: 10px 15px
+      background-color: $color_gree
+      color: $color_white
+      transition: 0.5s
+      &:hover
+        background-color: $color_black
+@media screen and (max-width: 992px)
+  .modal-header
+    h5
+      font-size: 16px
+  .modal-body
+    .rowrow
+      margin-top: 0px
+      .col-4
+        width: 100%
+        padding: 0px
+        .img_box
+          overflow-y: hidden
+          overflow-x: scroll
+          white-space: nowrap
+          img
+            +size(200px)
+      .col-8
+        width: 100%
+        padding: 0px
+        .box_tital_type
+          +flex_box
+          .input_box
+            font-size: 14px
+            margin-bottom: 20px
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              border-radius: 5px
+              text-align: center
+              +size(80%,30px)
+              &#checkbox
+                +size(20px)
+        .textarea_box
+          textarea
+            width: 100%
+            height: 100px
+  .modal-footer
+    button
+      border: none
+      border-radius: 5px
+      padding: 10px 15px
+      background-color: $color_gree
+      color: $color_white
+      transition: 0.5s
+      &:hover
+        background-color: $color_black
+@media screen and (max-width: 768px)
+  .modal-header
+    h5
+      font-size: 16px
+  .modal-body
+    .rowrow
+      margin-top: 0px
+      .col-4
+        width: 100%
+        padding: 0px
+        .img_box
+          overflow-y: hidden
+          overflow-x: scroll
+          white-space: nowrap
+          img
+            +size(180px)
+      .col-8
+        width: 100%
+        padding: 0px
+        .box_tital_type
+          +flex_box
+          .input_box
+            font-size: 14px
+            margin-bottom: 20px
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              border-radius: 5px
+              text-align: center
+              +size(80%,30px)
+              font-size: 12px
+              &#checkbox
+                +size(20px)
+        .textarea_box
+          textarea
+            width: 100%
+            height: 100px
+  .modal-footer
+    button
+      border: none
+      border-radius: 5px
+      padding: 10px 15px
+      background-color: $color_gree
+      color: $color_white
+      transition: 0.5s
+      font-size: 14px
+      &:hover
+        background-color: $color_black
+@media screen and (max-width: 576px)
+  .modal-header
+    h5
+      font-size: 16px
+  .modal-body
+    .rowrow
+      margin-top: 0px
+      .col-4
+        width: 100%
+        padding: 0px
+        .img_box
+          overflow-y: hidden
+          overflow-x: scroll
+          white-space: nowrap
+          font-size: 12px
+          img
+            +size(150px)
+      .col-8
+        width: 100%
+        padding: 0px
+        .box_tital_type
+          +flex_box
+          .input_box
+            font-size: 12px
+            margin-bottom: 20px
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              border-radius: 5px
+              text-align: center
+              +size(80%,30px)
+              font-size: 10px
+              &#checkbox
+                +size(20px)
+        .textarea_box
+          textarea
+            width: 100%
+            height: 100px
+            font-size: 12px
+  .modal-footer
+    button
+      border: none
+      border-radius: 5px
+      padding: 10px 15px
+      background-color: $color_gree
+      color: $color_white
+      transition: 0.5s
+      font-size: 12px
+      &:hover
+        background-color: $color_black

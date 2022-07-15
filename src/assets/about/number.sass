@@ -1,0 +1,242 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .Number_box
+    margin: 20px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(250px, 230px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(80%, 300px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 24px
+@media screen and (max-width: 1600px)
+  .Number_box
+    margin: 20px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(250px, 200px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(70%, 250px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 24px
+@media screen and (max-width: 1400px)
+  .Number_box
+    margin: 20px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(250px, 200px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(65%, 200px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 22px
+@media screen and (max-width: 1200px)
+  .Number_box
+    margin: 20px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(200px, 180px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(60%, 180px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 20px
+@media screen and (max-width: 992px)
+  .Number_box
+    margin: 20px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(160px, 140px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(60%, 140px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 16px
+@media screen and (max-width: 768px)
+  .Number_box
+    margin: 10px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(150px, 120px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(50%, 120px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        transition: 0.5s 0.5s
+        font-size: 14px
+@media screen and (max-width: 576px)
+  .Number_box
+    margin: 10px 0px
+    +flex_box
+    justify-content: space-around
+    .num_img_box
+      +size(80px, 60px)
+      +flex_box
+      position: relative
+      overflow: hidden
+      &:before
+        content: '',
+        display: block,
+        position: absolute
+        +size(100%)
+        transition: 0.5s
+        top: 100%
+        background-color: rgba($color_black, 0.8)
+      &:hover
+        &:before
+          top: 70%
+        h1
+          opacity: 1
+      img
+        z-index: -1
+        position: absolute
+        +size(45%, 80px)
+      h1
+        position: absolute
+        bottom: 0px
+        color: $color_white
+        opacity: 0
+        margin: 0
+        transition: 0.5s 0.5s
+        font-size: 12px

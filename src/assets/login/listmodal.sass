@@ -1,0 +1,332 @@
+@import '../sass/color_size.sass'
+// *
+//   border: 1px solid #000
+@media screen and (min-width: 1200px)
+  .modal-header
+    background-color: $color_grey
+    h5
+      span
+        color: $color_black
+        font-size: 24xp
+    .btn-close
+  .modal-body
+    height: auto
+    .row
+      margin-top: 0px
+      .col-4
+        .box_name
+          margin-top: 10px
+          +flex_box
+          flex-direction: column
+          input
+            text-align: center
+            width: 100%
+        .img_size
+          margin-top: 20px
+          +size(350px)
+      .col-8
+        .box_all
+          margin-top: 10px
+          +flex_box
+          .box_name
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              text-align: center
+              width: 100%
+              &.input_check
+                +size(20px)
+        .box_text
+          margin-top: 20px
+          +flex_box
+          flex-direction: column
+          textarea
+            +size(100%)
+            &.itemin
+              height: 400px
+  .modal-footer
+    button
+      border:  none
+      padding: 10px 20px
+      border-radius: 5px
+      transition: 0.5s
+      color: $color_white
+      &:hover
+        background-color: $color_black
+        color: $color_white
+    .bun_gree
+      background-color: $color_gree
+    .bun_grary
+      background-color: $color_grey
+      color: $color_black
+@media screen and (max-width: 1200px)
+  .modal-header
+    background-color: $color_grey
+    h5
+      span
+        color: $color_black
+        font-size: 24xp
+    .btn-close
+  .modal-body
+    height: auto
+    .row
+      margin-top: 0px
+      .col-4
+        .box_name
+          +flex_box
+          flex-direction: column
+          input
+            text-align: center
+            width: 100%
+        .img_size
+          margin-top: 20px
+          +size(220px)
+      .col-8
+        .box_all
+          margin-top: 10px
+          +flex_box
+          .box_name
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              text-align: center
+              width: 100%
+              &.input_check
+                +size(20px)
+        .box_text
+          margin-top: 20px
+          +flex_box
+          flex-direction: column
+          textarea
+            +size(100%)
+            &.itemin
+              height: 300px
+  .modal-footer
+    button
+      border:  none
+      padding: 10px 20px
+      border-radius: 5px
+      transition: 0.5s
+      color: $color_white
+      &:hover
+        background-color: $color_black
+        color: $color_white
+    .bun_gree
+      background-color: $color_gree
+    .bun_grary
+      background-color: $color_grey
+      color: $color_black
+@media screen and (max-width: 992px)
+  .modal-header
+    background-color: $color_grey
+    padding: 10px 20px
+    h5
+      span
+        color: $color_black
+        font-size: 18px
+    .btn-close
+      font-size: 14px
+  .modal-body
+    height: 500px
+    .row
+      margin-top: 0px
+      .col-4
+        width: 100%
+        +flex_box
+        flex-direction: column
+        .box_name
+          +flex_box
+          flex-direction: column
+          input
+            text-align: center
+            width: 100%
+        .img_size
+          margin-top: 20px
+          +size(350px)
+      .col-8
+        width: 100%
+        .box_all
+          margin-top: 10px
+          +flex_box
+          .box_name
+            +flex_box
+            flex-direction: column
+            width: 100%
+            input
+              text-align: center
+              width: 100%
+              &.input_check
+                +size(20px)
+        .box_text
+          margin-top: 20px
+          +flex_box
+          flex-direction: column
+          textarea
+            +size(100%)
+            &.itemin
+              height: 300px
+  .modal-footer
+    button
+      border:  none
+      padding: 5px 15px
+      border-radius: 5px
+      transition: 0.5s
+      color: $color_white
+      &:hover
+        background-color: $color_black
+        color: $color_white
+    .bun_gree
+      background-color: $color_gree
+    .bun_grary
+      background-color: $color_grey
+      color: $color_black
+@media screen and (max-width: 768px)
+  .modal-header
+    background-color: $color_grey
+    padding: 10px 20px
+    h5
+      span
+        color: $color_black
+        font-size: 16px
+    .btn-close
+      font-size: 14px
+  .modal-body
+    height: 500px
+    .row
+      margin-top: 0px
+      .col-4
+        width: 100%
+        +flex_box
+        flex-direction: column
+        .box_name
+          +flex_box
+          flex-direction: column
+          label
+            font-size: 14px
+          input
+            font-size: 14px
+            text-align: center
+            width: 100%
+        .img_size
+          margin-top: 10px
+          +size(300px)
+      .col-8
+        width: 100%
+        .box_all
+          margin-top: 10px
+          +flex_box
+          .box_name
+            +flex_box
+            flex-direction: column
+            width: 100%
+            label
+              font-size: 14px
+            input
+              font-size: 14px
+              text-align: center
+              width: 100%
+              &.input_check
+                +size(15px)
+        .box_text
+          margin-top: 20px
+          +flex_box
+          flex-direction: column
+          label
+            font-size: 14px
+          textarea
+            font-size: 14px
+            +size(100%)
+            &.itemin
+              height: 200px
+  .modal-footer
+    button
+      border:  none
+      padding: 5px 15px
+      border-radius: 5px
+      transition: 0.5s
+      color: $color_white
+      font-size: 14px
+      &:hover
+        background-color: $color_black
+        color: $color_white
+    .bun_gree
+      background-color: $color_gree
+    .bun_grary
+      background-color: $color_grey
+      color: $color_black
+@media screen and (max-width: 576px)
+  .modal-header
+    background-color: $color_grey
+    padding: 10px 15px
+    h5
+      span
+        color: $color_black
+        font-size: 14px
+    .btn-close
+      font-size: 14px
+  .modal-body
+    height: 500px
+    .row
+      margin-top: 0px
+      .col-4
+        width: 100%
+        +flex_box
+        flex-direction: column
+        .box_name
+          +flex_box
+          flex-direction: column
+          label
+            font-size: 14px
+          input
+            font-size: 14px
+            text-align: center
+            width: 100%
+        .img_size
+          margin-top: 10px
+          +size(200px)
+      .col-8
+        width: 100%
+        .box_all
+          margin-top: 10px
+          +flex_box
+          .box_name
+            +flex_box
+            flex-direction: column
+            width: 100%
+            label
+              font-size: 14px
+            input
+              font-size: 14px
+              text-align: center
+              width: 100%
+              &.input_check
+                +size(15px)
+        .box_text
+          margin-top: 20px
+          +flex_box
+          flex-direction: column
+          label
+            font-size: 14px
+          textarea
+            font-size: 14px
+            +size(100%)
+            &.itemin
+              height: 200px
+  .modal-footer
+    button
+      border:  none
+      padding: 5px 15px
+      border-radius: 5px
+      transition: 0.5s
+      color: $color_white
+      font-size: 14px
+      &:hover
+        background-color: $color_black
+        color: $color_white
+    .bun_gree
+      background-color: $color_gree
+    .bun_grary
+      background-color: $color_grey
+      color: $color_black

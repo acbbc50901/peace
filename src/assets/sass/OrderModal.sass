@@ -1,0 +1,329 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1200px)
+  .modal-header
+    background-color: $color_skin
+    h5
+      font-size: 24px
+      font-weight: bold
+  .modal-body
+    overflow-y: scroll
+    height: 500px
+    table
+      width: 100%
+      thead
+        border-bottom: 1px solid #333
+        th
+          font-size: 16px
+          width: 300px
+          &.samll
+            width: 50px
+      td
+        padding: 10px 0px
+        input
+          +size(50px, 40px)
+        img
+          +size(100px)
+        button
+          border-radius: 5px
+          padding: 10px 15px
+          background-color: $color_red
+          color: $color_white
+          transition: 0.5s
+          border: none
+          &:hover
+            background-color: $color_black
+            color: $color_white
+  .modal-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .count_box
+      width: 60%
+      display: flex
+      p
+        margin: 0px
+        margin-left: 20px
+    .total_box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 35%
+      p
+        margin: 0px
+      button
+        border-radius: 5px
+        padding: 10px 15px
+        background-color: $color_gree
+        color: $color_white
+        transition: 0.5s
+        border: none
+        &:hover
+          background-color: $color_black
+          color: $color_white
+@media screen and (max-width: 1200px)
+  .modal-header
+    background-color: $color_skin
+    h5
+      font-size: 24px
+      font-weight: bold
+  .modal-body
+    overflow-y: scroll
+    height: 500px
+    table
+      width: 100%
+      thead
+        border-bottom: 1px solid #333
+        th
+          font-size: 16px
+          width: 300px
+          &.samll
+            width: 50px
+      td
+        padding: 10px 0px
+        input
+          +size(50px, 40px)
+        img
+          +size(100px)
+        button
+          border-radius: 5px
+          padding: 10px 15px
+          background-color: $color_red
+          color: $color_white
+          transition: 0.5s
+          border: none
+          &:hover
+            background-color: $color_black
+            color: $color_white
+  .modal-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .count_box
+      width: 60%
+      display: flex
+      p
+        margin: 0px
+        margin-left: 20px
+    .total_box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 35%
+      p
+        margin: 0px
+      button
+        border-radius: 5px
+        padding: 10px 15px
+        background-color: $color_gree
+        color: $color_white
+        transition: 0.5s
+        border: none
+        &:hover
+          background-color: $color_black
+          color: $color_white
+@media screen and (max-width: 992px)
+  .modal-header
+    background-color: $color_skin
+    h5
+      font-size: 24px
+      font-weight: bold
+  .modal-body
+    overflow-y: scroll
+    height: 500px
+    table
+      width: 100%
+      thead
+        border-bottom: 1px solid #333
+        th
+          font-size: 16px
+          width: 200px
+          &.samll
+            width: 80px
+      td
+        padding: 10px 0px
+        input
+          +size(50px, 40px)
+        img
+          +size(100px)
+        button
+          border-radius: 5px
+          padding: 10px 15px
+          background-color: $color_red
+          color: $color_white
+          transition: 0.5s
+          border: none
+          &:hover
+            background-color: $color_black
+            color: $color_white
+  .modal-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .count_box
+      width: 50%
+      display: flex
+      p
+        margin: 0px
+        margin-left: 20px
+      input
+        width: 100px
+    .total_box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 45%
+      p
+        margin: 0px
+      button
+        border-radius: 5px
+        padding: 10px 15px
+        background-color: $color_gree
+        color: $color_white
+        transition: 0.5s
+        border: none
+        &:hover
+          background-color: $color_black
+          color: $color_white
+@media screen and (max-width: 768px)
+  .modal-header
+    background-color: $color_skin
+    h5
+      font-size: 18px
+      font-weight: bold
+  .modal-body
+    overflow-y: scroll
+    height: 400px
+    table
+      width: 100%
+      thead
+        border-bottom: 1px solid #333
+        th
+          font-size: 14px
+          width: 150px
+          &.samll
+            width: 80px
+      td
+        font-size: 14px
+        padding: 10px 0px
+        input
+          +size(45px, 35px)
+        img
+          +size(80px)
+        button
+          border-radius: 5px
+          padding: 8px 12px
+          background-color: $color_red
+          color: $color_white
+          transition: 0.5s
+          border: none
+          &:hover
+            background-color: $color_black
+            color: $color_white
+  .modal-footer
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .count_box
+      width: 50%
+      display: flex
+      justify-content: space-between
+      p
+        font-size: 14px
+        margin: 0px
+        margin-left: 0px
+      input
+        width: 150px
+        font-size: 14px
+    .total_box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 45%
+      p
+        font-size: 14px
+        margin: 0px
+      button
+        border-radius: 5px
+        padding: 8px 12px
+        background-color: $color_gree
+        color: $color_white
+        transition: 0.5s
+        border: none
+        font-size: 14px
+        &:hover
+          background-color: $color_black
+          color: $color_white
+@media screen and (max-width: 576px)
+  .modal-header
+    background-color: $color_skin
+    h5
+      font-size: 16px
+      font-weight: bold
+  .modal-body
+    overflow-y: scroll
+    height: 400px
+    table
+      width: 100%
+      thead
+        border-bottom: 1px solid #333
+        th
+          font-size: 12px
+          width: 150px
+          &.samll
+            width: 80px
+      td
+        font-size: 14px
+        padding: 10px 0px
+        input
+          +size(40px, 30px)
+        img
+          +size(60px)
+        button
+          border-radius: 5px
+          padding: 8px 12px
+          background-color: $color_red
+          color: $color_white
+          transition: 0.5s
+          border: none
+          font-size: 12px
+          &:hover
+            background-color: $color_black
+            color: $color_white
+  .modal-footer
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 5px
+    .count_box
+      width: 100%
+      display: flex
+      justify-content: space-between
+      p
+        font-size: 12px
+        margin: 0px
+        margin-left: 0px
+      input
+        width: 100px
+        font-size: 12px
+    .total_box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+      p
+        font-size: 14px
+        margin: 0px
+      button
+        border-radius: 5px
+        padding: 8px 12px
+        background-color: $color_gree
+        color: $color_white
+        transition: 0.5s
+        border: none
+        font-size: 14px
+        &:hover
+          background-color: $color_black
+          color: $color_white
+

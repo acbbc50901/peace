@@ -10,10 +10,54 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
+    component: () => import('../views/AboutView.vue'),
+  },
+  {
+    path: '/shop',
+    name: 'shop',
+    component: () => import('../views/ShopView.vue'),
+  },
+  {
+    path: '/call',
+    name: 'call',
+    component: () => import('../views/CallView.vue'),
+  },
+  {
+    path: '/product',
+    name: 'product',
+    component: () => import('../views/ProductView.vue'),
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/LoginView.vue'),
+  },
+  {
+    path: '/loginborad',
+    name: 'loginborad',
+    component: () => import('../views/LoginPage/AllProductsBoardView.vue'),
+    children: [
+      {
+        path: 'allproduct',
+        name: 'allpriduct',
+        component: () => import('../views/LoginPage/UpdataProduct.vue'),
+      },
+      {
+        path: 'discount',
+        name: 'discount',
+        component: () => import('../views/LoginPage/UpdataDiscount.vue'),
+      },
+      {
+        path: 'list',
+        name: 'list',
+        component: () => import('../views/LoginPage/UpdataList.vue'),
+      },
+      {
+        path: 'allorder',
+        name: 'allorder',
+        component: () => import('../views/LoginPage/AllOrder.vue'),
+      },
+    ],
   },
 ];
 

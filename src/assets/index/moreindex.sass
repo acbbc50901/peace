@@ -1,0 +1,1016 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .more_box
+    padding: 50px 160px
+    +flex_box
+    .derr_box
+      +size(100%, 650px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 325px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 15%
+            font-size: 18px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 5px 10px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 650px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 80%
+          left: 10%
+          transform: translateX(-50%)
+          font-size: 26px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          border-radius: 5px
+          padding: 10px 10px
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 10px 20px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 80%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 24px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 1600px)
+  .more_box
+    padding: 50px 160px
+    +flex_box
+    .derr_box
+      +size(100%, 600px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 300px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 20%
+            font-size: 18px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 5px 10px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 600px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 80%
+          left: 20%
+          transform: translateX(-50%)
+          font-size: 26px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          border-radius: 5px
+          padding: 10px 10px
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 10px 20px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 80%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 24px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 1400px)
+  .more_box
+    padding: 50px 160px
+    +flex_box
+    .derr_box
+      +size(100%, 500px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 250px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 20%
+            font-size: 16px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 5px
+            font-size: 14px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 500px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 80%
+          left: 20%
+          transform: translateX(-50%)
+          font-size: 20px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          border-radius: 5px
+          padding: 10px 10px
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 10px 20px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 80%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 18px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 1200px)
+  .more_box
+    padding: 50px
+    +flex_box
+    .derr_box
+      +size(100%, 400px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 200px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 20%
+            font-size: 16px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 5px
+            font-size: 14px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 400px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 80%
+          left: 20%
+          transform: translateX(-50%)
+          font-size: 18px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 5px 15px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 80%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 18px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 992px)
+  .more_box
+    padding: 25px
+    +flex_box
+    .derr_box
+      +size(100%, 400px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 200px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 20%
+            font-size: 16px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 5px
+            font-size: 14px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 400px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 85%
+          left: 20%
+          transform: translateX(-50%)
+          font-size: 16px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 5px 15px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 85%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 14px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 768px)
+  .more_box
+    padding: 25px
+    +flex_box
+    .derr_box
+      +size(100%, 325px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 160px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 10%
+            font-size: 14px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 2px 5px
+            font-size: 12px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 20px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 325px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 85%
+          left: 20%
+          transform: translateX(-50%)
+          font-size: 16px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 5px 15px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 20px
+          top: 85%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 14px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)
+@media screen and (max-width: 576px)
+  .more_box
+    padding: 10px
+    +flex_box
+    flex-direction: row
+    .derr_box
+      +size(100%, 180px)
+      +flex_box
+      flex-direction: column
+      .row_box
+        +size(100%)
+        +flex_box
+        flex-direction: row
+        position: relative    
+        .img_box
+          &:before
+            top: 0px
+            left: 0px
+        .img_box2
+          &:before
+            top: 0px
+            rigth: 0px
+        .img_box,.img_box2
+          +size(100%, 90px)
+          position: relative
+          overflow: hidden
+          &:before,&:after
+            position: absolute
+            content: ""
+            display: block
+            +size(100%)
+            transition: 0.5s
+          &:after
+            background-color: rgba($color_black, 0.8)
+            left: 0px
+            top: 100%
+            transition-delay: 0.2s 
+          &:before
+            background-color: rgba($color_white, 0.4)
+          &:hover
+            &::before
+              height: 0px
+            &:after
+              top: 70%
+            p
+              opacity: 1
+              visibility: visible
+            button
+              opacity: 1
+              visibility: visible
+          p
+            z-index: 1
+            position: absolute
+            top: 80%
+            left: 0%
+            font-size: 12px
+            font-weight: bold
+            opacity: 0
+            transition: 0.8s
+            color: $color_white
+            visibility: hidden
+          button
+            z-index: 1
+            position: absolute
+            border-radius: 5px
+            padding: 2px 5px
+            font-size: 10px
+            background-color: $color_white
+            color: $color_black
+            border: none
+            right: 0px
+            top: 80%
+            transition-delay: 1.5s 
+            transition: 1s
+            opacity: 0
+            visibility: hidden
+            &:hover
+              background-color: $color_red
+              color: $color_white
+          img
+            z-index: -1
+            +size(100%, 100%)
+            position: relative
+    .big_derr_box
+      +size(100%, 180px)
+      .big_img_box
+        +size(100%)
+        position: relative
+        overflow: hidden
+        &:before,&:after
+          position: absolute
+          content: ""
+          display: block
+          +size(100%)
+          transition: 0.5s
+        &:after
+          background-color: rgba($color_black, 0.8)
+          left: 0px
+          top: 100%
+          transition-delay: 0.2s 
+        &:before
+          background-color: rgba($color_white, 0.4)
+        &:hover
+          &::before
+            height: 0px
+          &:after
+            top: 70%
+          p
+            opacity: 1
+            visibility: visible
+          button
+            opacity: 1
+            visibility: visible
+        p
+          z-index: 1
+          position: absolute
+          top: 80%
+          left: 0%
+          transform: translateX(0%)
+          font-size: 14px
+          font-weight: bold
+          opacity: 0
+          transition: 0.8s
+          color: $color_white
+          visibility: hidden
+        button
+          z-index: 1
+          position: absolute
+          border-radius: 5px
+          padding: 2px 5px
+          background-color: $color_white
+          color: $color_black
+          border: none
+          right: 5px
+          top: 85%
+          transition-delay: 1.5s 
+          transition: 1s
+          opacity: 0
+          visibility: hidden
+          font-size: 12px
+          &:hover
+            background-color: $color_red
+            color: $color_white
+      img
+        +size(100%)

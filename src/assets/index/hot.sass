@@ -1,0 +1,244 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(250px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(200px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(175px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+          font-size: 18px
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 1600px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(200px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(150px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(125px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 1400px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(180px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(125px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(100px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 1200px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(175px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(120px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(100px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 992px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(175px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(120px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(100px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 768px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(150px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(100px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(80px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+          font-size: 14px
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red
+@media screen and (max-width: 578px)
+  .dessert_box
+    margin-top: 10px
+    +flex_box
+    justify-content: space-around
+    flex-direction: row
+    a
+      color: $color_black
+      .desserts_box
+        +size(90px, 120px)
+        +flex_box
+        flex-direction: column
+        justify-content: space-around
+        .border_box
+          border-radius: 50%
+          +size(80px)
+          background-color: $color_gree
+          position: relative
+          transition: 0.5s
+          img
+            +size(60px)
+            position: absolute
+            right: 10px
+            top: 10px
+            transition: 1s
+        p
+          transition: 0.7s
+          font-size: 12px
+        &:hover
+          .border_box
+            background-color: $color_red
+            img
+              top: 0px
+          p
+            color: $color_red

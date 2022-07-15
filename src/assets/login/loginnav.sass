@@ -1,0 +1,258 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1400px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(80px, 350px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 40px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 45px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 18px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(200px, 250px)
+    transition: 0.5s
+@media screen and (max-width: 1400px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(80px, 300px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 35px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 40px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 18px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(130px, 200px)
+    transition: 0.5s
+@media screen and (max-width: 1200px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(80px, 300px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 35px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 40px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 18px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(130px, 200px)
+    transition: 0.5s
+@media screen and (max-width: 992px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(80px, 270px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 30px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 35px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        font-size: 14px
+        &:hover
+          font-size: 16px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(130px, 200px)
+    transition: 0.5s
+@media screen and (max-width: 768px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: 10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(50px, 230px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 25px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 30px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        font-size: 12px
+        &:hover
+          font-size: 14px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(100px, 150px)
+    transition: 0.5s
+@media screen and (max-width: 576px)
+  .navbar_box
+    padding: 0px
+    top: 50%
+    transform: translateY(-50%)
+    left: -10px
+    border-radius: 10px
+    +flex_box
+    flex-direction: column
+    position: fixed
+    transition: 0.5s
+    +size(50px, 200px)
+    background-color: $color_grey
+    a
+      margin-top: 5px
+      margin-bottom: 5px
+      i
+        font-size: 20px
+        color: $color_gree
+        transition: 0.5s
+        &:hover
+          font-size: 25px
+          color: $color_blue
+      p
+        margin: 0px
+        color: $color_gree
+        transition: 0.5s
+        font-size: 12px
+        &:hover
+          font-size: 14px
+          color: $color_blue
+    .close_box
+      cursor: pointer
+      .changeicon_none
+        transition: 1s
+      .changeicon
+        transform: rotate(-180deg)
+        transition: 1s
+      button
+        border: none
+  .navbar_chang
+    +size(100px, 150px)
+    transition: 0.5s

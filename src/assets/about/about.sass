@@ -1,0 +1,219 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 500px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(90%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(25%, 380px)
+        left: 60px
+        bottom: 0px
+      .toto
+        +size(40%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(80%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+@media screen and (max-width: 1600px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 450px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(90%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(25%, 300px)
+        left: 60px
+        bottom: 0px
+      .toto
+        +size(40%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(80%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+@media screen and (max-width: 1400px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 400px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(85%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(25%, 300px)
+        left: 60px
+        bottom: 0px
+      .toto
+        +size(35%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(80%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+        h1
+          font-size: 20px
+        p
+          font-size: 16px
+@media screen and (max-width: 1200px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 360px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(85%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(25%, 250px)
+        left: 60px
+        bottom: 0px
+      .toto
+        +size(35%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(80%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+        h1
+          font-size: 18px
+        p
+          font-size: 16px
+@media screen and (max-width: 992px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 320px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(80%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(20%, 200px)
+        left: 60px
+        bottom: 0px
+      .toto
+        +size(30%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(80%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+        h1
+          font-size: 18px
+        p
+          font-size: 16px
+@media screen and (max-width: 768px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 250px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(80%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(25%, 180px)
+        left: 60px
+        bottom: 10px
+      .toto
+        +size(30%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(95%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+        h1
+          font-size: 16px
+        p
+          font-size: 14px
+@media screen and (max-width: 576px)
+  .about_row
+    +flex_box
+    .inter_box,.inter_img_box
+      +size(50%, 200px)
+    .inter_img_box
+      +flex_box
+      position: relative
+      .backgrond
+        +size(90% ,70%)
+      .man,.toto
+        position: absolute
+      .man
+        +size(20%, 100px)
+        left: 30px
+        bottom: 10px
+      .toto
+        +size(25%)
+        bottom: 20px
+        right: 0px
+    .inter_box
+      +flex_box
+      .inter_box_text
+        background-color: $color_blue
+        +size(90%, 50%)
+        border-radius: 20px
+        +flex_box
+        flex-direction: column
+        h1
+          font-size: 12px
+        p
+          font-size: 10px

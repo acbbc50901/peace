@@ -1,30 +1,55 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+<NavBar ref="navbar"></NavBar>
+<ToastMessage></ToastMessage>
+  <router-view v-slot="{ Component, route }">
+  <transition name="fade">
+      <div :key="route.name">
+      <component :is="Component"></component>
+    </div>
+  </transition>
+</router-view>
+<Foot></Foot>
 </template>
+<script>
+import NavBar from '@/components/NavBar.vue';
+import Foot from '@/components/FooTer.vue';
+import ToastMessage from '@/components/ToastMessage.vue';
+import emitter from '@/methods/emitter';
 
+export default {
+  components: {
+    NavBar,
+    Foot,
+    ToastMessage,
+  },
+  provide() {
+    return {
+      emitter,
+    };
+  },
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import "./assets/sass/all";
+body,html{
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: white;
 }
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+//捲軸寬度
+  ::-webkit-scrollbar {
+  width: 6px;
+  background-color: black;
 }
+//捲軸本體顏色
+  ::-webkit-scrollbar-thumb {
+  background-color: #497736;
+}
+}
+.fade-enter-active,.fade-leave-active{
+  transition: opacity 0.5s
+  transform 1s }
+.fade-enter-from,.fade-leave-to{
+  transition: opacity 1s
+  transform 1s }
 </style>

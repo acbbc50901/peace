@@ -1,0 +1,27 @@
+
+$color_skin: #FEFBE7
+$color_white: #fff
+$color_gree: #497736
+$color_blue: #A0BCC2
+$color_black: #333
+$color_red: #AB3B3A
+$color_notsogree: #78BF5F
+$color_grey: #eee
+
+@mixin flex_box
+  display: flex
+  justify-content: center
+  align-items: center
+@mixin size($w,$h:$w)
+  width: $w
+  height: $h
+*
+  font-family: 微軟正黑體
+body,html
+  margin: 0
+  box-sizing: border-box
+  +size(100%,100%)
+  overflow-x: hidden
+a
+  text-decoration: none
+  

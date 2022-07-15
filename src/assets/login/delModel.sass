@@ -1,0 +1,60 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 992px)
+  .header-modal
+    background-color: $color_red
+    color: $color_white
+  .body_modal
+    height: 100%
+    +flex_box
+    .text_box
+      span
+        text-align: center
+        font-size: 18px
+        &.fzbig
+          font-size: 24px
+          margin: 0px 15px
+          color: $color_red
+  .modal-footer
+    .bntt
+      background-color: $color_red
+      color: $color_white
+@media screen and (max-width: 992px)
+  .header-modal
+    background-color: $color_red
+    color: $color_white
+  .body_modal
+    height: 100%
+    +flex_box
+    .text_box
+      span
+        text-align: center
+        font-size: 14px
+        &.fzbig
+          font-size: 18px
+          margin: 0px 15px
+          color: $color_red
+  .modal-footer
+    .bntt
+      background-color: $color_red
+      color: $color_white
+@media screen and (max-width: 768px)
+  .header-modal
+    background-color: $color_red
+    color: $color_white
+  .body_modal
+    height: 100%
+    +flex_box
+    .text_box
+      span
+        text-align: center
+        font-size: 12px
+        &.fzbig
+          font-size: 16px
+          margin: 0px 10px
+          color: $color_red
+  .modal-footer
+    .bntt
+      background-color: $color_red
+      color: $color_white

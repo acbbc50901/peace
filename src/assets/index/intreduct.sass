@@ -1,0 +1,475 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(40%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        height: 300px
+        width: 100%
+      .work_box
+        height: 190px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 230px
+          img
+            margin: 0px 20px
+            margin-top: 25px
+            position: relative
+            +size(180px)
+      .text_box_out
+        height: 350px
+        +flex_box
+        .text_box
+          +size(600px, 300px)
+          text-align: center
+          border-radius: 10px
+          border: none
+          background-color: $color_white
+          +flex_box
+          flex-direction: column
+          position: relative
+          h1
+            font-size: 24px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 18px
+            margin: 0px
+    .img_box
+      height: 600px
+      +flex_box
+      .border_box
+        border: none
+        +size(70%, 70%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          +size(50%)
+          border-radius: 50%
+        &:after
+          +size(40%)
+          top: -50px
+          left: -25px
+        &:before
+          +size(60%)
+          bottom: -60px
+          right: -50px
+        img
+          +size(500px 400px)
+          position: relative
+          top: 50px
+@media screen and (max-width: 1600px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(40%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        height: 150px
+        width: 100%
+      .work_box
+        height: 165px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 200px
+          img
+            margin: 0px 20px
+            margin-top: 20px
+            position: relative
+            +size(160px)
+      .text_box_out
+        height: 300px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 24px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 18px
+            margin: 0px
+    .img_box
+      height: 450px
+      +flex_box
+      .border_box
+        border: none
+        +size(75%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -50px
+          left: -25px
+        &:before
+          +size(55%)
+          bottom: -60px
+          right: -50px
+        img
+          position: relative
+          top: 30px
+          +size(250px, 400px)
+@media screen and (max-width: 1400px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(40%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        width: 100%
+      .work_box
+        height: 150px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 200px
+          img
+            margin: 0px 15px
+            margin-top: 20px
+            position: relative
+            +size(140px)
+      .text_box_out
+        height: 250px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 24px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 16px
+            margin: 0px
+    .img_box
+      height: 400px
+      +flex_box
+      .border_box
+        border: none
+        +size(65%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -50px
+          left: -25px
+        &:before
+          +size(55%)
+          bottom: -60px
+          right: -50px
+        img
+          position: relative
+          top: 30px
+          +size(225px, 350px)
+@media screen and (max-width: 1200px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(40%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        width: 100%
+      .work_box
+        height: 120px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 160px
+          img
+            margin: 0px 15px
+            margin-top: 20px
+            position: relative
+            +size(120px)
+      .text_box_out
+        height: 250px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 22px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 16px
+            margin: 0px
+    .img_box
+      height: 365px
+      +flex_box
+      .border_box
+        border: none
+        +size(65%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -30px
+          left: 0px
+        &:before
+          +size(55%)
+          bottom: -60px
+          right: -50px
+        img
+          position: relative
+          top: 30px
+          +size(200px, 325px)
+@media screen and (max-width: 992px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(45%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        width: 100%
+      .work_box
+        height: 80px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 140px
+          img
+            margin: 0px 15px
+            margin-top: 20px
+            position: relative
+            +size(100px)
+      .text_box_out
+        height: 250px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 18px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 14px
+            margin: 0px
+    .img_box
+      height: 365px
+      +flex_box
+      .border_box
+        border: none
+        +size(60%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -30px
+          left: 0px
+        &:before
+          +size(55%)
+          bottom: -60px
+          right: -50px
+        img
+          position: relative
+          top: 30px
+          +size(175px, 300px)
+@media screen and (max-width: 768px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(45%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        width: 100%
+      .work_box
+        height: 70px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 120px
+          img
+            margin: 0px 15px
+            margin-top: 20px
+            position: relative
+            +size(80px)
+      .text_box_out
+        height: 150px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 16px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 12px
+            margin: 0px
+    .img_box
+      height: 225px
+      +flex_box
+      .border_box
+        border: none
+        +size(60%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -30px
+          left: 0px
+        &:before
+          +size(55%)
+          bottom: -20px
+          right: -10px
+        img
+          position: relative
+          top: 10px
+          +size(150px, 200px)
+@media screen and (max-width: 576px)
+  .intder_box
+    +flex_box
+    background-color: $color_blue
+    .big_box,.img_box
+      +size(45%)
+    .big_box
+      +flex_box
+      flex-direction: column
+      .work_box,.text_box_out
+        width: 100%
+      .work_box
+        height: 70px
+        overflow: hidden
+        +flex_box
+        .smaller_box
+          overflow: hidden
+          overflow-x: scroll
+          position: relative
+          white-space: nowrap
+          height: 120px
+          img
+            margin: 0px 10px
+            margin-top: 20px
+            position: relative
+            +size(60px)
+      .text_box_out
+        height: 100px
+        +flex_box
+        .text_box
+          text-align: center
+          h1
+            font-size: 14px
+            font-weight: bold
+            margin: 0px
+          p
+            font-size: 10px
+            margin: 0px
+    .img_box
+      height: 150px
+      +flex_box
+      .border_box
+        border: none
+        +size(80%)
+        border-radius: 50%
+        position: relative
+        background: $color_white
+        +flex_box
+        &:after,&:before
+          content: '' 
+          position: absolute
+          display: block
+          background-color: $color_white
+          border-radius: 50%
+        &:after
+          +size(35%)
+          top: -30px
+          left: 0px
+        &:before
+          +size(55%)
+          bottom: -20px
+          right: -10px
+        img
+          position: relative
+          top: 10px
+          +size(90px, 150px)

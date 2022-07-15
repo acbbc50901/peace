@@ -1,0 +1,287 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+@media screen and (min-width: 1600px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 700px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(85%, 100px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: $color_white
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+@media screen and (max-width: 1600px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 600px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(80%, 100px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: $color_white
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+@media screen and (max-width: 1400px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 550px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(75%, 100px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: #fff
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+@media screen and (max-width: 1200px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 500px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(75%, 80px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: #fff
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+        font-size: 22px
+@media screen and (max-width: 992px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 450px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(70%, 70px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: #fff
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+        font-size: 18px
+@media screen and (max-width: 768px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 300px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(50%, 50px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(20px, 10px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: #fff
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+        font-size: 16px
+@media screen and (max-width: 576px)
+  .header_box
+    position: relative
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      +size(100%)
+      background-color: rgba($color_black, 0.2)
+    img
+      max-height: 250px
+    .border_box
+      animation: ain2 3s 
+      position: absolute
+      +flex_box
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 30px
+      border-radius: 10px
+      +size(45%, 35px)
+      background-color: rgba($color_black, 0.8)
+      &:before,&:after 
+        content: ''
+        display: block
+        position: absolute
+        +size(15px, 5px)
+        top: -5px
+        right: 0px
+        border-radius: 10px
+      &:before
+        background-color: $color_black
+        animation: ain1 10s infinite
+      &:after 
+        background-color: #fff
+        animation: ain1 10s infinite reverse
+      h1
+        color: $color_white
+        font-size: 14px
+@keyframes ain1
+  0%
+    top: 0%
+    left: 0%
+  25%
+    top:0%
+    left: 99%
+  40%
+    left: 99%
+    top: 90%
+  75%
+    top: 90%
+    left: 0%
+  100%
+    top: 0%
+    left: 0%
+@keyframes ain2
+  0%
+    opacity: 0
+  100%
+    opacity: 1
