@@ -1,0 +1,260 @@
+@import '../sass/color_size.sass'
+*
+  // border: 1px solid #000
+header
+  .header_box
+    img
+      width: 100%
+@media screen and (min-width: 1400px)
+  section#call
+    .call_box
+      padding: 20px
+      +flex_box
+      align-items: start
+      &:hover
+        .map_box
+          iframe
+            width: 700px
+        .call_text_box
+          width: 500px
+          background-color: $color_black
+          .text_box
+            h1
+              transition: 0.7s
+              width: 150px
+              color: $color_white
+              border-bottom: 2px solid $color_red
+            p
+              color: $color_white
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(600px, 400px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(600px, 400px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        .text_box
+          padding: 50px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 24px
+          p
+            transition: 0.7s
+@media screen and (max-width: 1400px)
+  section#call
+    .call_box
+      padding: 20px
+      +flex_box
+      align-items: start
+      &:hover
+        .map_box
+          iframe
+            width: 650px
+        .call_text_box
+          width: 450px
+          background-color: $color_black
+          .text_box
+            h1
+              transition: 0.7s
+              width: 150px
+              color: $color_white
+              border-bottom: 2px solid $color_red
+            p
+              color: $color_white
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(550px, 350px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(550px, 350px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        .text_box
+          padding: 50px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 20px
+          p
+            transition: 0.7s
+            font-size: 14px
+@media screen and (max-width: 1200px)
+  section#call
+    .call_box
+      padding: 20px 40px
+      +flex_box
+      align-items: start
+      &:hover
+        .map_box
+          iframe
+            width: 600px
+        .call_text_box
+          width: 425px
+          background-color: $color_black
+          .text_box
+            h1
+              transition: 0.7s
+              width: 150px
+              color: $color_white
+              border-bottom: 2px solid $color_red
+            p
+              color: $color_white
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(500px, 300px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(500px, 300px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        .text_box
+          padding: 50px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 20px
+          p
+            transition: 0.7s
+            font-size: 14px
+@media screen and (max-width: 992px)
+  section#call
+    height: 2000px
+    .call_box
+      padding: 20px 40px
+      +flex_box
+      align-items: start
+      pointer-events: none
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(350px, 300px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(350px, 300px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        overflow: hidden
+        .text_box
+          padding: 25px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 20px
+          p
+            transition: 0.7s
+            font-size: 14px
+@media screen and (max-width: 768px)
+  section#call
+    // height: 2000px
+    .call_box
+      padding: 10px
+      +flex_box
+      align-items: start
+      pointer-events: none
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(250px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(250px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        overflow: hidden
+        .text_box
+          padding: 10px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 14px
+          p
+            transition: 0.7s
+            font-size: 12px
+            margin-bottom: 3px
+@media screen and (max-width: 576px)
+  section#call
+    // height: 2000px
+    .call_box
+      padding: 10px
+      +flex_box
+      align-items: start
+      pointer-events: none
+      .map_box
+        iframe
+          transition: 0.7s
+          +size(150px, 180px)
+          border-radius: 5px 0px 0px 5px
+      .call_text_box
+        transition: 0.7s
+        +size(250px, 180px)
+        background-color: $color_grey
+        border-radius: 0px 5px 5px 0px
+        +flex_box
+        justify-content: start
+        overflow: hidden
+        .text_box
+          padding: 10px 
+          +flex_box
+          align-items: start
+          flex-direction: column
+          h1
+            text-align-last: left
+            width: 100px
+            padding-bottom: 5px
+            transition: 0.7s
+            border-bottom: 2px solid $color_blue
+            font-size: 14px
+          p
+            transition: 0.7s
+            font-size: 12px
+            margin-bottom: 3px

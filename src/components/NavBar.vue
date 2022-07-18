@@ -127,6 +127,7 @@ export default {
       scrollTrigger: {
         trigger: '.nav',
         start: '20px',
+        markers: true,
         onLeave: () => {
           gsap.to('.nav', { backgroundColor: '#fff' });
         },

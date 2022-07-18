@@ -35,7 +35,7 @@ aria-labelledby='exampleModalLabel' aria-hidden='true' ref='modal')
               .box_name
                 label(for="isPublic")  是否啟用
                 input.input_check(type="checkbox" id='isPublic'
-                :true-value="true" :false-value="false"
+                :true-value="true" :false-value="false" :value="false"
                 v-model="newlist.isPublic")
             .box_all
               .box_name

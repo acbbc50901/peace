@@ -4,7 +4,7 @@
     .row_box
       .img_box
         p 草莓滿天星
-        button(type='button' @click="$router.push('/')") buy
+        button(type='button' @click="$router.push('/about')") buy
         img(src="@/assets/img/derr-01.png", alt="")
       .img_box2
         p 花之彩
